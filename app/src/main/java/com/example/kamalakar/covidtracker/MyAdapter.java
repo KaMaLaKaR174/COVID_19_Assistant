@@ -1,7 +1,7 @@
 package com.example.kamalakar.covidtracker;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +14,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 public class MyAdapter extends ArrayAdapter<CountryModel> {
 
@@ -71,7 +73,7 @@ public class MyAdapter extends ArrayAdapter<CountryModel> {
                     List<CountryModel> result=new ArrayList<>();
                     String search=constraint.toString().toLowerCase();
                     for(CountryModel model: countryList){
-                        if(model.getCountryName().toLowerCase().contains(search)){
+                        if(model.getCountryName().toLowerCase().indexOf(search)==0){
                             result.add(model);
                         }
                     }

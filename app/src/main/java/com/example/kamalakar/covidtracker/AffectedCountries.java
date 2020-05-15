@@ -1,7 +1,8 @@
 package com.example.kamalakar.covidtracker;
 
+import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -30,11 +31,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class AffectedCountries extends AppCompatActivity {
     EditText editText;
     SimpleArcLoader loader;
     ListView listView;
     MyAdapter myAdapter;
+
 
     public static List<CountryModel> countryList;
     CountryModel countryModel;
@@ -94,7 +98,7 @@ public class AffectedCountries extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void fetchData() {
+    public void fetchData() {
         String url="https://corona.lmao.ninja/v2/countries/";
         RequestQueue queue=Volley.newRequestQueue(AffectedCountries.this);
         StringRequest request=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {

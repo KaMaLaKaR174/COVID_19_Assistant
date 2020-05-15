@@ -1,7 +1,8 @@
 package com.example.kamalakar.covidtracker;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
@@ -9,11 +10,15 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+
 public class DetailActivity extends AppCompatActivity {
 
     private int position;
     TextView cases,active,deaths,recovered,critical,todayCases,todayDeaths,country;
     ImageView flag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +40,14 @@ public class DetailActivity extends AppCompatActivity {
         country=findViewById(R.id.country_detail);
         flag=findViewById(R.id.flag_detail);
 
+
+        setData();
+
+
+
+
+    }
+    void setData(){
         cases.setText(AffectedCountries.countryList.get(position).getCases());
         active.setText(AffectedCountries.countryList.get(position).getActive());
         recovered.setText(AffectedCountries.countryList.get(position).getRecovered());
@@ -45,9 +58,6 @@ public class DetailActivity extends AppCompatActivity {
         country.setText(AffectedCountries.countryList.get(position).getCountryName());
 
         Picasso.with(this).load(AffectedCountries.countryList.get(position).getFlag()).fit().into(flag);
-
-
-
 
     }
 
