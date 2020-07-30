@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1000169519802",
+    "firebase_url": "https://covidhelper-27f3a.firebaseio.com",
+    "project_id": "covidhelper-27f3a",
+    "storage_bucket": "covidhelper-27f3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000169519802:android:c246d273fa343bef036083",
+        "android_client_info": {
+          "package_name": "com.example.kamalakar.covidtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000169519802-ehf0rh05prrdj6gcf5fa9ne7jg2kjd5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kamalakar.covidtracker",
+            "certificate_hash": "0a77c8bac0797a28b8fe8ff87ac4cee661ac5762"
+          }
+        },
+        {
+          "client_id": "1000169519802-n4bva5tf8p5rovfcjncic66l9oiog6gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5XJOcuCsAMfirkvaAxZRfR2IyjzeIUCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000169519802-n4bva5tf8p5rovfcjncic66l9oiog6gi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,12 +1,10 @@
-package com.example.kamalakar.covidtracker;
+package com.example.kamalakar.covidtracker.Models;
 
-import android.content.Context;
 import android.content.Intent;
 
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,13 +18,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.kamalakar.covidtracker.Activities.DetailActivity;
+import com.example.kamalakar.covidtracker.Adapters.MyAdapter;
+import com.example.kamalakar.covidtracker.R;
 import com.leo.simplearcloader.SimpleArcLoader;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.ref.ReferenceQueue;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:id="@+id/read_switch"
+        android:key="switch_select"
+        android:defaultValue="true"
+        android:title="Want stats to be read"
+        />
+
+</PreferenceScreen>

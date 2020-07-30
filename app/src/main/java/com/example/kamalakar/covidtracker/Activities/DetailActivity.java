@@ -1,4 +1,4 @@
-package com.example.kamalakar.covidtracker;
+package com.example.kamalakar.covidtracker.Activities;
 
 import android.content.Intent;
 
@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.kamalakar.covidtracker.Models.AffectedCountries;
+import com.example.kamalakar.covidtracker.R;
 import com.squareup.picasso.Picasso;
 
 import androidx.appcompat.app.AppCompatActivity;

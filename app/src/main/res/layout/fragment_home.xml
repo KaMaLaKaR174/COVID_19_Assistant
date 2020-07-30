@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="0.80">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="About Us"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="18sp"
+                android:text="Universally, 'Blood' is recognized as the most precious element that sustains life.It saves innumerable lives across the world in a variety of conditions. Once in every 2- seconds, someone, somewhere is desperately in need of blood. More than 29 million units of blood components are transfused every year."
+
+
+
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="18sp"
+                android:text= "The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed.Each year, we could meet only up to 1% (approx) of our nation’s demand for blood transfusion. Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility."
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="18sp"
+                android:text="We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients."
+
+                />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:src="@drawable/phone"
+
+            />
+
+
+
+        <ImageView
+            android:id="@+id/home_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:src="@drawable/email"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/home_maps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:src="@drawable/address"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

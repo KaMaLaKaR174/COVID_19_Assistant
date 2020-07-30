@@ -1,4 +1,4 @@
-package com.example.kamalakar.covidtracker;
+package com.example.kamalakar.covidtracker.Adapters;
 
 import android.content.Context;
 
@@ -10,6 +10,9 @@ import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.kamalakar.covidtracker.Models.AffectedCountries;
+import com.example.kamalakar.covidtracker.Models.CountryModel;
+import com.example.kamalakar.covidtracker.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

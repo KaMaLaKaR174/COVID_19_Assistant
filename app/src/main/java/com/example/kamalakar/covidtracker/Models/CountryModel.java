@@ -1,4 +1,4 @@
-package com.example.kamalakar.covidtracker;
+package com.example.kamalakar.covidtracker.Models;
 
 public class CountryModel {
     private String flag,cases,todayCases,deaths,todayDeaths,active,recovered,critical,countryName;
