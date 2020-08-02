@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.skshubhamiitkmr.bloodbankproject.EditActivity">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/edit_image"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:src="@drawable/default_user1"-->
+            <!--/>-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/image_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Upload"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Update Profile"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Email"
+            android:textSize="20dp"
+            />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edit_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+
+
+            <Spinner
+                android:id="@+id/edit_bloodgroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:entries="@array/bloodgroups"
+                />
+
+
+
+
+            <Spinner
+                android:id="@+id/edit_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:entries="@array/gender"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/edit_checkdonor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Want To Become  A Donor?"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
