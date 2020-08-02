@@ -35,6 +35,7 @@ public class DonorSearchActivity extends AppCompatActivity {
     ArrayList<String> nameList;
     ArrayList<String> emailList;
     ArrayList<String> phoneList;
+    ArrayList<String> addressList;
     SearchAdapter searchAdapter;
     String bg;
 
@@ -67,6 +68,8 @@ public class DonorSearchActivity extends AppCompatActivity {
         nameList=new ArrayList<>();
         emailList=new ArrayList<>();
         phoneList=new ArrayList<>();
+        addressList=new ArrayList<>();
+
 
         myref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -76,27 +79,29 @@ public class DonorSearchActivity extends AppCompatActivity {
                 {
 
                     String uid=snapshot.getKey();
-                    if(uid.equals("stock")||uid.equals("Request")||uid.equals(firebaseAuth.getCurrentUser().getUid()))
+                    if(uid.equals(firebaseAuth.getCurrentUser().getUid()))
                         continue;
                     String donorName=snapshot.child("registerName").getValue(String.class);
                     String donorEmail=snapshot.child("registerEmail").getValue(String.class);
                     String donorPhone=snapshot.child("registerPhone").getValue(String.class);
                     String donorCheck=snapshot.child("checkDonor").getValue(String.class);
                     String donorBloodGroup=snapshot.child("registerBloodGroup").getValue(String.class);
+                    String donorAddress=snapshot.child("registerAdd1").getValue(String.class);
 
                     if(donorBloodGroup.equals(bg)&&donorCheck.equals("true"))
                     {
                         nameList.add(donorName);
                         phoneList.add(donorPhone);
                         emailList.add(donorEmail);
-
+                        addressList.add(donorAddress);
+ 
                     }
 
 
 
                 }
 
-                searchAdapter=new SearchAdapter(DonorSearchActivity.this,nameList,emailList,phoneList);
+                searchAdapter=new SearchAdapter(DonorSearchActivity.this,nameList,emailList,phoneList,addressList);
                 if(searchAdapter.getItemCount()==0){
                     Toast.makeText(DonorSearchActivity.this,"No Donors Found",Toast.LENGTH_SHORT).show();
                 }
